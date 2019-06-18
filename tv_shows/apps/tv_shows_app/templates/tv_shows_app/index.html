@@ -73,6 +73,8 @@
               <tr>
                 <th>id</th>
                 <th>Title</th>
+                <th>Network</th>
+                <th>Release Date</th>
                 <th>Action</th>
               </tr>
               </thead>
@@ -81,6 +83,8 @@
                 <tr>
                   <td>{{ show.id }}</td>
                     <td>{{ show.title }}</td>
+                    <td>{{ show.network }}</td>
+                    <td>{{ show.release_date }}</td>
                     <td> <a href="/shows/{{book.id}}">Show</a> </td>
                   </tr>
                   {% endfor %}
