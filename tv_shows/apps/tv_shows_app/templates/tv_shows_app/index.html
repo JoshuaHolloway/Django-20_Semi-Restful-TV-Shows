@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index.html</title>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    {% load static %}		<!-- added this line -->
+    <link rel="stylesheet" href="{% static 'app_name/css/style.css' %}">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <script src="{% static 'app_name/js/script.js' %}"></script>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <style type="text/css">
+      img {
+        height: 25px;
+      }
+
+      main {
+          border: black 1px solid;
+
+          width: 98%;
+          margin: 0.5%;
+          align-items: center;
+          padding: 0.5%;
+          text-align: center;
+      }
+
+      table tr td {
+          width: 50px;
+          height: 50px;
+      }
+
+      .color1 { background: blue; }
+      .color2 { background: red; }
+
+      #submit-button, #submit-button-login {
+          background-color: red;
+          color: white;
+          width: 50%;
+          margin-left: 49%;
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+      }
+
+      label { display: inline-block; }
+
+      .field {
+          border-color: black;
+          width: 50%;
+          float: right;
+      }
+
+      #left-col, #right-col {
+          width: 49%;
+          display: inline-block;
+          vertical-align: top;
+          padding: 0.5%;
+
+          <!-- background: blue;-->
+          <!-- opacity: 0.5;-->
+      }
+    </style>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </head>
+  <body>
+    <!-- ------------------------------------------------------------------- -->
+    <main>
+      <!-- --------------------------------------------------------------- -->
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Title</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+                {% for show in shows %}
+                <tr>
+                  <td>{{ show.id }}</td>
+                    <td>{{ show.title }}</td>
+                    <td> <a href="/shows/{{book.id}}">Show</a> </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+            </table>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>
