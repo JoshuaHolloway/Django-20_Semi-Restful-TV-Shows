@@ -15,9 +15,10 @@ def show(request, show_id):
   return render(request, "tv_shows_app/show.html", context)
 # ======================================================================================================================
 def new(request):
+  debug = 0
 
   # TODO: DO the query to create a new show
 
   # TODO: Get the id of the new show
 
-  return render(request, "tv_show_app/show.html")
+  return render(request, "tv_show_app/new.html")
