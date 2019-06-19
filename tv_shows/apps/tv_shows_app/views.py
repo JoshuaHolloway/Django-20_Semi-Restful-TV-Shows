@@ -29,10 +29,15 @@ def add(request):
   if request.method != "POST":
     print("ERROR: Expecting a POST request to be made to this route")
   title = request.POST['title']
-  desc = request.POST["desc"]
 
-  # TODO: Get network, release_date, description from form
-  book = Shows.objects.create(title=title)
+  # TODO
+  # email = request.POST["email"]
+  # network = request.POST["network"]
+  # release_date = request.POST["release_date"]
+  # description = request.POST["description"]
 
-  context = show_info(book.id) # To pass into HTML
-  return render(request, "books_authors_app/show.html", context)
+  # TODO: Get {network, release_date, description} from form
+  show = Shows.objects.create(title=title)
+
+  context = show_info(show.id) # To pass into HTML
+  return render(request, "tv_shows_app/show.html", context)
