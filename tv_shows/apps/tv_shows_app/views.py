@@ -14,11 +14,25 @@ def show(request, show_id):
   context = {"show": show}
   return render(request, "tv_shows_app/show.html", context)
 # ======================================================================================================================
+def show_info(show_id):
+  # Specific show
+  show = Shows.objects.get(id=show_id)
+
+  # To pass into HTML
+  return {"show": show}
+# ======================================================================================================================
 def new(request):
-  debug = 0
+  return render(request, "tv_shows_app/new.html")
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+def add(request):
 
-  # TODO: DO the query to create a new show
+  if request.method != "POST":
+    print("ERROR: Expecting a POST request to be made to this route")
+  title = request.POST['title']
+  desc = request.POST["desc"]
 
-  # TODO: Get the id of the new show
+  # TODO: Get network, release_date, description from form
+  book = Shows.objects.create(title=title)
 
-  return render(request, "tv_show_app/new.html")
+  context = show_info(book.id) # To pass into HTML
+  return render(request, "books_authors_app/show.html", context)
