@@ -41,3 +41,11 @@ def add(request):
 
   context = show_info(show.id) # To pass into HTML
   return render(request, "tv_shows_app/show.html", context)
+# ======================================================================================================================
+def delete(request, show_id):
+
+  # TODO: Query to delete row
+  show = Shows.objects.get(id=show_id)
+  show.delete()
+
+  return redirect("/shows")
