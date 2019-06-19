@@ -43,9 +43,5 @@ def add(request):
   return render(request, "tv_shows_app/show.html", context)
 # ======================================================================================================================
 def delete(request, show_id):
-
-  # TODO: Query to delete row
-  show = Shows.objects.get(id=show_id)
-  show.delete()
-
+  Shows.objects.get(id=show_id).delete()
   return redirect("/shows")
