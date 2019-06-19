@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Show</title>
+    <title>Edit</title>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- TODO: move out the CSS from each HTML file into a common single file-->
+    {% load static %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <style type="text/css">
@@ -13,7 +15,7 @@
   <body>
     <a href="/shows">Home</a>
     <!-- ------------------------------------------------------------------- -->
-    <form action='/shows/new/add' method='POST'>
+    <form action='/shows/{{show.id}}/edit/apply_edit' method='POST'>
       {% csrf_token %}
       <div class="form-group"> <!-- fill-in-blank for name -->
         <label for="title">Name: </label>
@@ -22,7 +24,7 @@
 
       <!-- TODO: Other row fields -->
 
-      <input type="hidden" id="submit-button" name="submit-button" value="new">
+      <input type="hidden" id="submit-button" name="submit-button" value="edit">
       <button class="btn btn-primary" id="refresh-page">Submit</button>
 
     </form>

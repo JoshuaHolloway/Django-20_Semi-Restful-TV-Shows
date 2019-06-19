@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Index.html</title>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    {% load static %}		<!-- added this line -->
+    <!-- TODO: move out the CSS from each HTML file into a common single file-->
+    {% load static %}
     <link rel="stylesheet" href="{% static 'app_name/css/style.css' %}">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -88,7 +89,7 @@
                     <td>
                       <a href="/shows/{{show.id}}">Show</a>
                       <br>
-                      <a href="/">TODO: Edit</a>
+                      <a href="/shows/{{show.id}}/edit">Edit</a>
                       <br>
                       <a href="/shows/{{show.id}}/delete">Delete</a>
                     </td>

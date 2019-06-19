@@ -14,7 +14,7 @@ def show(request, show_id):
   context = {"show": show}
   return render(request, "tv_shows_app/show.html", context)
 # ======================================================================================================================
-def show_info(show_id):
+def get_show_info(show_id):
   # Specific show
   show = Shows.objects.get(id=show_id)
 
@@ -25,23 +25,37 @@ def new(request):
   return render(request, "tv_shows_app/new.html")
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 def add(request):
-
-  if request.method != "POST":
-    print("ERROR: Expecting a POST request to be made to this route")
   title = request.POST['title']
 
   # TODO
-  # email = request.POST["email"]
   # network = request.POST["network"]
   # release_date = request.POST["release_date"]
   # description = request.POST["description"]
 
   # TODO: Get {network, release_date, description} from form
   show = Shows.objects.create(title=title)
-
-  context = show_info(show.id) # To pass into HTML
-  return render(request, "tv_shows_app/show.html", context)
+  return render(request, "tv_shows_app/show.html", get_show_info(show.id))
 # ======================================================================================================================
 def delete(request, show_id):
   Shows.objects.get(id=show_id).delete()
   return redirect("/shows")
+# ======================================================================================================================
+def edit(request, show_id):
+  return render(request, "tv_shows_app/edit.html", get_show_info(show_id))
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+def apply_edit(request, show_id):
+
+  # TODO: Change from creation to edit query
+  show = Shows.objects.get(id=show_id)
+  title = request.POST['title']
+  show.title = title
+
+  # TODO
+  # network = request.POST["network"]
+  # release_date = request.POST["release_date"]
+  # description = request.POST["description"]
+
+  show.save()
+
+  return redirect("/shows/" + str(show_id))
+# ======================================================================================================================
