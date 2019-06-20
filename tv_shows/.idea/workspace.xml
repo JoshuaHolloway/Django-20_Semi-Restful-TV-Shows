@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc92d43-6583-45c6-9891-78c8a71a0b0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/tv_shows_app/templates/tv_shows_app/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/tv_shows_app/templates/tv_shows_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tv_shows_app/templates/tv_shows_app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/tv_shows_app/templates/tv_shows_app/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tv_shows_app/templates/tv_shows_app/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/tv_shows_app/templates/tv_shows_app/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tv_shows_app/templates/tv_shows_app/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/tv_shows_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tv_shows_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/tv_shows_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tv_shows_app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +17,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/apps/tv_shows_app/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+                <state relative-caret-position="198">
+                  <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -191,7 +185,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Django-25_the-wall/wall_project" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -260,7 +254,7 @@
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" auto_hide="true" id="Run" order="2" sideWeight="0.4970902" visible="true" weight="0.38432267" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" sideWeight="0.4970902" weight="0.38432267" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.52473325" weight="0.3105023" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -305,7 +299,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/tv_shows_app/urls.py</url>
-          <line>21</line>
+          <line>20</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
@@ -376,8 +370,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/tv_shows_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+        <state relative-caret-position="198">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>

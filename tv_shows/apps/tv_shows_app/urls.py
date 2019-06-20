@@ -14,7 +14,6 @@ urlpatterns = [
   url(r'^shows/new$', views.new),  # /shows/new
   url(r'^shows/new/add$', views.add),  # /shows/new/add
 
-  # TODO:
   # 4. Edit
   # URL                  Request   Server-Method   return
   # /users/<id>/edit     GET       edit()
@@ -24,5 +23,5 @@ urlpatterns = [
   # 5. Delete
   # URL                  Request   Server-Method   return
   # /users/<id>/delete   GET       delete()        redirect to /shows
-  url(r'^shows/(?P<show_id>\d+)/delete$', views.delete)  # /shows/<id>/new
+  url(r'^shows/(?P<show_id>\d+)/delete$', views.delete)  # /shows/<id>/delete
 ]
