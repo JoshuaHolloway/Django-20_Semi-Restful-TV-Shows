@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba4e7f60-c5e1-4702-9560-042de86106b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django-20_Semi-Restful-TV-Shows.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/migrations/0002_auto_20190618_1141.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/migrations/0003_auto_20190619_1208.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py" afterDir="false" />
     </list>
@@ -18,7 +28,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tv_shows/tv_shows/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="274">
+                <state relative-caret-position="552">
                   <caret line="111" selection-start-line="111" selection-end-line="114" />
                 </state>
               </provider>
@@ -27,31 +37,19 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+                <state relative-caret-position="72">
+                  <caret line="3" column="11" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="144">
+                  <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
                   <folding>
-                    <element signature="e#0#49#0" expanded="true" />
+                    <element signature="e#0#59#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -60,21 +58,54 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+                <state relative-caret-position="144">
+                  <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/new.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="281">
+                  <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/edit.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="267">
+                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="239">
-                  <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+                <state relative-caret-position="1224">
+                  <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
+                  <folding>
+                    <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -82,6 +113,15 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>show</find>
+      <find>shows</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>trip</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,19 +132,21 @@
         <option value="$PROJECT_DIR$/tv_shows/tv_shows/urls.py" />
         <option value="$PROJECT_DIR$/tv_shows/tv_shows/settings.py" />
         <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/books_authors_app/index.html" />
-        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py" />
-        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" />
-        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html" />
         <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/urls.py" />
+        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html" />
+        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/new.html" />
+        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/edit.html" />
+        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" />
+        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py" />
         <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="645" />
-    <option name="width" value="1734" />
-    <option name="height" value="753" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2234" />
+    <option name="y" value="-15" />
+    <option name="width" value="1735" />
+    <option name="height" value="1101" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -119,51 +161,49 @@
         <subPane>
           <expand>
             <path>
-              <item name="Django-20_Semi-Restful-TV-Shows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-20_Semi-Restful-TV-Shows" type="462c0819:PsiDirectoryNode" />
+              <item name="exam-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Django-20_Semi-Restful-TV-Shows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-20_Semi-Restful-TV-Shows" type="462c0819:PsiDirectoryNode" />
+              <item name="exam-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-2" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Django-20_Semi-Restful-TV-Shows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-20_Semi-Restful-TV-Shows" type="462c0819:PsiDirectoryNode" />
-              <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-20_Semi-Restful-TV-Shows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-20_Semi-Restful-TV-Shows" type="462c0819:PsiDirectoryNode" />
+              <item name="exam-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-2" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="tv_shows_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Django-20_Semi-Restful-TV-Shows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-20_Semi-Restful-TV-Shows" type="462c0819:PsiDirectoryNode" />
+              <item name="exam-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-2" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows_app" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Django-20_Semi-Restful-TV-Shows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-20_Semi-Restful-TV-Shows" type="462c0819:PsiDirectoryNode" />
+              <item name="exam-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-2" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Django-20_Semi-Restful-TV-Shows" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-20_Semi-Restful-TV-Shows" type="462c0819:PsiDirectoryNode" />
+              <item name="exam-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-2" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="tv_shows_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-2" type="462c0819:PsiDirectoryNode" />
+              <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
+              <item name="tv_shows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,6 +215,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
@@ -223,36 +264,74 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560862123756</updated>
+      <workItem from="1561338973027" duration="1286000" />
+      <workItem from="1561387225323" duration="1631000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2917000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1840" height="1002" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1381798" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16292135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988507" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28390804" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28275862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32988507" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25632185" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2551724" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_20_Semi_Restful_TV_Shows$manage.coverage" NAME="manage Coverage Results" MODIFIED="1561339057671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tv_shows" />
+    <SUITE FILE_PATH="coverage/exam_2$manage.coverage" NAME="manage Coverage Results" MODIFIED="1561388895938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tv_shows" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Apps/Anaconda3/Lib/site-packages/django/apps/config.py">
+    <entry file="file://$PROJECT_DIR$/../Apps/Anaconda3/Lib/site-packages/django/apps/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="115" selection-start-line="115" selection-end-line="115" />
@@ -260,20 +339,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/books_authors_app/index.html" />
-    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tv_shows/tv_shows/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="111" selection-start-line="111" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tv_shows/tv_shows/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -281,36 +346,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py">
+    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="267">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py">
+    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="281">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="144">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/urls.py">
+    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv_shows/tv_shows/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="111" selection-start-line="111" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>

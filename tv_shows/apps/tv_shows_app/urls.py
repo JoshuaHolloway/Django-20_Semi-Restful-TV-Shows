@@ -5,23 +5,23 @@ urlpatterns = [
   url(r'^$', views.index),
 
   # 1. Show table
-  url(r'^shows$', views.shows),  # /shows
+  url(r'^trips$', views.trips),  # /shows
 
   # 2. Show row
-  url(r'^shows/(?P<show_id>\d+)$', views.show),  # localhost:8000/shows/<id>
+  url(r'^trips/(?P<trip_id>\d+)$', views.show_trip),  # localhost:8000/shows/<id>
 
   # 3. New and Add
-  url(r'^shows/new$', views.new),  # /shows/new
-  url(r'^shows/new/add$', views.add),  # /shows/new/add
+  url(r'^trips/new$', views.new),  # /trips/new
+  url(r'^trips/new/add$', views.add),  # /trips/new/add
 
   # 4. Edit
   # URL                  Request   Server-Method   return
   # /users/<id>/edit     GET       edit()
-  url(r'^shows/(?P<show_id>\d+)/edit$', views.edit),  # /shows/<id>/edit
-  url(r'^shows/(?P<show_id>\d+)/edit/apply_edit$', views.apply_edit),  # /shows/<id>/edit/apply_edit
+  url(r'^trips/(?P<trip_id>\d+)/edit$', views.edit),  # /trips/<id>/edit
+  url(r'^trips/(?P<trip_id>\d+)/edit/apply_edit$', views.apply_edit),  # /trips/<id>/edit/apply_edit
 
   # 5. Delete
   # URL                  Request   Server-Method   return
-  # /users/<id>/delete   GET       delete()        redirect to /shows
-  url(r'^shows/(?P<show_id>\d+)/delete$', views.delete)  # /shows/<id>/delete
+  # /users/<id>/delete   GET       delete()        redirect to /trips
+  url(r'^trips/(?P<trip_id>\d+)/delete$', views.delete)  # /trips/<id>/delete
 ]

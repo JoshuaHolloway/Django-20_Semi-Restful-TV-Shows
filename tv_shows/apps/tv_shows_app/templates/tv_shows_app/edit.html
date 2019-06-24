@@ -13,9 +13,9 @@
   </head>
   <!-- ===================================================================== -->
   <body>
-    <a href="/shows">Home</a>
+    <a href="/trips">Home</a>
     <!-- ------------------------------------------------------------------- -->
-    <form action='/shows/{{show.id}}/edit/apply_edit' method='POST'>
+    <form action='/trips/{{trip.id}}/edit/apply_edit' method='POST'>
       {% csrf_token %}
       <div class="form-group"> <!-- fill-in-blank for name -->
         <label for="title">Name: </label>
