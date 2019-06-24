@@ -51,6 +51,38 @@ class Users(models.Model):
   def __repr__(self):
     return f"Users: ({self.first_name}, {self.last_name}, {self.email})"
 # ======================================================================================================================
+# ======================================================================================================================
+# ======================================================================================================================
+# ======================================================================================================================
+# ======================================================================================================================
+# ======================================================================================================================
+# Custom manager for validation
+class TripsManager(models.Manager):
+    def basic_validator(self, postData, users):
+
+      errors = {}
+      # add keys and values to errors dictionary for each invalid field
+
+      # Validation 1:
+      # A destination start date, end-date, and plan must be provided
+      # TODO: Change date check to use reg-ex to match proper form
+      min_name_len = 8 #YYYY-MM-DD
+      if len(postData['start_date']) < min_name_len:
+        errors["start_date"] = "Valid start-date was not entered"
+      if len(postData['end_date']) < min_name_len:
+        errors["end_date"] = "Valid end-date was not entered"
+
+
+      # Validation 2:
+      # Destinations and plans must consist of at least 3-characters
+      min_name_len = 3
+      if len(postData['dest']) < min_name_len:
+        errors["dest"] = "destination should be at least " + str(min_name_len) + " characters"
+      if len(postData['plan']) < min_name_len:
+        errors["plan"] = "plan should be at least " + str(min_name_len) + " characters"
+
+      return errors
+# ======================================================================================================================
 # Table 2:
 class Trips(models.Model):
 
@@ -62,6 +94,7 @@ class Trips(models.Model):
   user = models.ForeignKey(Users, related_name="trips")
   created_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)
+  objects = TripsManager()  # add this line!
 
   def __repr__(self):
     return f"Trips: ({self.dest}, {self.start_date}, {self.end_date}, {self.plan})"

@@ -77,7 +77,7 @@
               </thead>
               <tbody>
                   <!--Only list trips added by the current user -->
-                    {% for trip in user.trips.all %}
+                    {% for trip in user.trips.all reversed %}
                     <tr>
                         <td><a href="/trips/{{trip.id}}">{{ trip.dest }}</a></td>
                         <td>{{ trip.start_date }}</td>
