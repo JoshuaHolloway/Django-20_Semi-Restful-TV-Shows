@@ -30,7 +30,7 @@ def new(request):
   return render(request, "tv_shows_app/new.html")
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 def add(request):
-  title = request.POST['title']
+  dest = request.POST['dest']
 
   # TODO
   # network = request.POST["network"]
@@ -38,7 +38,7 @@ def add(request):
   # description = request.POST["description"]
 
   # TODO: Get {network, release_date, description} from form
-  trip = Trips.objects.create(title=title)
+  trip = Trips.objects.create(dest=dest, start_date='2019-06-06', plan="temp")
   return render(request, "tv_shows_app/show.html", get_trip_info(trip.id))
 # ======================================================================================================================
 def delete(request, trip_id):
@@ -51,8 +51,8 @@ def edit(request, trip_id):
 def apply_edit(request, trip_id):
 
   trip = Trips.objects.get(id=trip_id)
-  title = request.POST['title']
-  trip.title = title # TODO
+  dest = request.POST['dest']
+  trip.dest = dest # TODO
 
   # TODO
   # network = request.POST["network"]

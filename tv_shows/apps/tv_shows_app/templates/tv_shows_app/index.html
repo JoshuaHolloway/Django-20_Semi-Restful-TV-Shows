@@ -72,26 +72,27 @@
           <table class="table table-striped">
             <thead>
               <tr>
-                <th>id</th>
-                <th>Title</th>
-                <th>Network</th>
-                <th>Release Date</th>
+                <th>Dest</th>
+                <th>Start-Date</th>
+                <th>End-Date</th>
+                <th>Plan</th>
                 <th>Action</th>
               </tr>
               </thead>
               <tbody>
                 {% for trip in trips %}
                 <tr>
-                  <td>{{ trip.id }}</td>
-                    <td>{{ trip.title }}</td>
-                    <td>{{ trip.network }}</td>
-                    <td>{{ trip.release_date }}</td>
                     <td>
-                      <a href="/trips/{{trip.id}}">Show</a>
-                      <br>
+                      <a href="/trips/{{trip.id}}">{{ trip.dest }}</a></td>
+                    <td>{{ trip.start_date }}</td>
+                    <td>{{ trip.end_date }}</td>
+                    <td>{{ trip.plan }}</td>
+                    <td>
+                      <p>
                       <a href="/trips/{{trip.id}}/edit">Edit</a>
-                      <br>
+                       |
                       <a href="/trips/{{trip.id}}/delete">Delete</a>
+                      </p>
                     </td>
                   </tr>
                   {% endfor %}
