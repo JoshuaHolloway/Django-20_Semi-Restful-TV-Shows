@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <style type="text/css">
+        #box {
+            border: black 1px solid;
+            width: 75%;
+        }
     </style>
   </head>
     <!-- ----------------------------------------------------------------------------------------------------------- -->
@@ -15,11 +19,11 @@
         <ul class="nav nav-pills">
 
         <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Welcome {{request.session.user_logged_in.first_name}}</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Hello {{request.session.user_logged_in.first_name}}! Read about this trip!</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="/trips">Home</a>
+            <a class="nav-link" href="/trips">Dashboard</a>
         </li>
 
         <li class="nav-item">
@@ -30,14 +34,32 @@
     <!-- ----------------------------------------------------------------------------------------------------------- -->
   <body>
 
-    <h3><b>ID: </b> {{trip.id}}</h3>
-    <h3><b>Destination: </b> {{trip.dest}}</h3>
-    <h3><b>Start-Date: </b> {{trip.start_date}}</h3>
-    <h3><b>End-Date: </b> {{trip.end_date}}</h3>
-    <h3><b>Plan: </b> {{trip.plan}}</h3>
 
-    <a href="/trips/{{trip.id}}/edit">Edit</a>
-    <a href="/trips/{{trip.id}}/delete">Delete</a>
+    <h1>{{trip.dest}}</h1>
+    <div id="box">
+        <div id="top">
+            <h3><b>Start-Date: </b> {{trip.start_date}}</h3>
+            <h3><b>End-Date: </b> {{trip.end_date}}</h3>
+            <h3><b>Created-On: </b> {{trip.created_at}}</h3>
+            <h3><b>Last Updated At: </b> {{trip.created_at}}</h3>
+            <h3><b>Plan: </b> {{trip.plan}}</h3>
+            <h3><b>Created by: </b> {{trip.user.first_name}} {{trip.user.last_name}}</h3>
+        </div>
+
+        <div id="bottom">
+            <ul class="nav nav-pills">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/trips/{{trip.id}}/edit">Edit</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/trips/{{trip.id}}/delete">Delete</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
 
   </body>
 </html>
