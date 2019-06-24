@@ -92,18 +92,22 @@ def edit(request, trip_id):
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 def apply_edit(request, trip_id):
 
-  trip = Trips.objects.get(id=trip_id)
-  dest = request.POST['dest']
-  trip.dest = dest # TODO
+  valid = validate(request, Trips)
+  if valid:
+    trip = Trips.objects.get(id=trip_id)
+    trip.dest = request.POST['dest']
+    trip.start_date = request.POST["start_date"]
+    trip.end_date = request.POST["end_date"]
+    trip.plan = request.POST["plan"]
+    trip.save()
+    return redirect("/trips") # redirect to dashboard
 
-  # TODO
-  # network = request.POST["network"]
-  # release_date = request.POST["release_date"]
-  # description = request.POST["description"]
-
-  trip.save()
-
-  return redirect("/trips/" + str(trip_id))
+  else: # not-valid
+    ## redirect the user back to the form to fix the errors
+    #redirect_path = "trips/edit/" + str(trip_id)
+    #print(redirect_path)
+    #return redirect(redirect_path) # TODO: Why does this route to trips/5/edit/trips/edit/5 ????
+    return render(request, "tv_shows_app/edit.html", get_trip_info(trip_id)) # HACK TODO: Replace with actual redirect
 # ======================================================================================================================
 # ======================================================================================================================
 # ======================================================================================================================

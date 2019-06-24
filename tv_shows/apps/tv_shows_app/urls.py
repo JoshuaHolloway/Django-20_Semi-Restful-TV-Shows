@@ -17,8 +17,12 @@ urlpatterns = [
   # 4. Edit
   # URL                  Request   Server-Method   return
   # /users/<id>/edit     GET       edit()
-  url(r'^trips/(?P<trip_id>\d+)/edit$', views.edit),  # /trips/<id>/edit
+  url(r'^trips/edit/(?P<trip_id>\d+)$', views.edit),  # /trips/<id>/edit
   url(r'^trips/(?P<trip_id>\d+)/edit/apply_edit$', views.apply_edit),  # /trips/<id>/edit/apply_edit
+  # NOTE: When I have two paths like trips/edit/stuff and
+  #       the routing fails.  A hack that seems to solve the issue is to nat have
+  #       the same leading portion, e.g., change the example to trips/edit/stuff and trips/otherStuff/edit
+
 
   # 5. Delete
   # URL                  Request   Server-Method   return
