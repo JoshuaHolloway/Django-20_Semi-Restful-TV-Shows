@@ -10,14 +10,31 @@
     <style type="text/css">
     </style>
   </head>
-  
-  <!-- ===================================================================== -->
-  <body>
-    <a href="/">Home</a>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <nav>
+        <ul class="nav nav-pills">
 
-    <h2>ID: {{trip.id}}</h2> <br>
-    <h2>Dest: {{trip.dest}}</h2> <br>
-    <h3>Description: {{trip.description}}</h3>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Welcome {{request.session.user_logged_in.first_name}}</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/trips">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/users/logout">Logout</a>
+        </li>
+        </ul>
+    </nav>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+  <body>
+
+    <h3><b>ID: </b> {{trip.id}}</h3>
+    <h3><b>Destination: </b> {{trip.dest}}</h3>
+    <h3><b>Start-Date: </b> {{trip.start_date}}</h3>
+    <h3><b>End-Date: </b> {{trip.end_date}}</h3>
+    <h3><b>Plan: </b> {{trip.plan}}</h3>
 
     <a href="/trips/{{trip.id}}/edit">Edit</a>
     <a href="/trips/{{trip.id}}/delete">Delete</a>
