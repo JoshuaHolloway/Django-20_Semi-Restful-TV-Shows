@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba4e7f60-c5e1-4702-9560-042de86106b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,22 +41,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="62" selection-start-line="62" selection-end-line="62" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="586">
-                  <caret line="115" column="20" lean-forward="true" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
-                  <folding>
-                    <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-                  </folding>
+                <state relative-caret-position="504">
+                  <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -130,8 +118,8 @@
         <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/reg_login.html" />
         <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/models.py" />
         <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/views.py" />
-        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" />
         <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html" />
+        <option value="$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html" />
       </list>
     </option>
   </component>
@@ -260,12 +248,12 @@
       <workItem from="1561338973027" duration="1286000" />
       <workItem from="1561387225323" duration="2033000" />
       <workItem from="1561389308339" duration="2993000" />
-      <workItem from="1561392611657" duration="3775000" />
+      <workItem from="1561392611657" duration="4078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10087000" />
+    <option name="totallyTimeSpent" value="10390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,20 +427,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="115" column="20" lean-forward="true" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv_shows/apps/tv_shows_app/templates/tv_shows_app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
         </state>
       </provider>
     </entry>

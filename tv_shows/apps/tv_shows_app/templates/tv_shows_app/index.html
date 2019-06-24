@@ -13,9 +13,6 @@
     <script src="{% static 'app_name/js/script.js' %}"></script>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <style type="text/css">
-      img {
-        height: 25px;
-      }
 
       main {
           border: black 1px solid;
@@ -27,39 +24,19 @@
           text-align: center;
       }
 
-      table tr td {
-          width: 50px;
-          height: 50px;
+      nav {
+        margin-top: 1%;
       }
 
-      .color1 { background: blue; }
-      .color2 { background: red; }
-
-      #submit-button, #submit-button-login {
-          background-color: red;
+      #create-new-trip {
+          background-color: white;
           color: white;
-          width: 50%;
-          margin-left: 49%;
+          /*width: 50%;*/
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
       }
 
-      label { display: inline-block; }
 
-      .field {
-          border-color: black;
-          width: 50%;
-          float: right;
-      }
 
-      #left-col, #right-col {
-          width: 49%;
-          display: inline-block;
-          vertical-align: top;
-          padding: 0.5%;
-
-          <!-- background: blue;-->
-          <!-- opacity: 0.5;-->
-      }
     </style>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   </head>
@@ -74,6 +51,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/users/logout">Logout</a>
                 </li>
+
+                <li class="nav-item" id="create-new-trip">
+                    <a class="nav-link" href="/trips/new">Create a new trip!</a>
+                </li>
+
           </ul>
         </nav>
         <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -116,8 +98,6 @@
             </table>
         </div>
       </div>
-
-      <td> <a href="/trips/new">Add a new trip</a> </td>
 
     </main>
   </body>
