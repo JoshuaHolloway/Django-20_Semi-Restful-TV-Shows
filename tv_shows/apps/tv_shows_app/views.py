@@ -1,18 +1,12 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.contrib import messages
 from .models import Trips, Users
+
 # ======================================================================================================================
 def root(request):
-
-  # Initialize session
   if 'user_logged_in' not in request.session:
-    request.session['user_logged_in'] = {}
+    request.session['user_logged_in'] = {} # Initialize session
   return redirect("/users/reg_login")
-
-
-  # TODO: Change this to Login Screen
-  #  -After login, then redirect to /trips
-  #return redirect("/trips")
 # ======================================================================================================================
 def trips(request):
   # All Trips
@@ -44,10 +38,9 @@ def add(request):
   dest = request.POST['dest']
 
   # TODO: Grab other fields
-  # start_date = request.POST["start_date"]
-  # end_date = request.POST["end_date"]
-  # plan = request.POST["plan"]
-  plan = "temp plan"
+  start_date = request.POST["start_date"]
+  end_date = request.POST["end_date"]
+  plan = request.POST["plan"]
 
   # TODO: Apply the one-to-many relationship
   # Step 1: Grab user row from Users table
@@ -56,13 +49,12 @@ def add(request):
 
   # Step 2: Create row in Trips table
   #trip = Trips.objects.create(dest=dest, start_date='2019-06-06', plan="temp")
-  trip = Trips.objects.create(dest=dest, plan=plan, user=user)
+  trip = Trips.objects.create(dest=dest, plan=plan, start_date=start_date, end_date=end_date, user=user)
 
   # Step 3: Pass data into HTML
   trips = Trips.objects.all()
-  users = Users.objects.all()
-  context = {'trips': trips, 'users': users}
-
+  user = Users.objects.get(id=request.session['user_logged_in']['id'])
+  context = {'trips': trips, 'user': user}
   return render(request, "tv_shows_app/index.html", context)
 # ======================================================================================================================
 def delete(request, trip_id):

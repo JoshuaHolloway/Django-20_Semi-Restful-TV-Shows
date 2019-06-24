@@ -6,26 +6,112 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <style type="text/css">
-    </style>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js" integrity="sha256-VBLiveTKyUZMEzJd6z2mhfxIqz3ZATCuVMawPZGzIfA=" crossorigin="anonymous"></script>
+
+    <!-- Tempus Dominus Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha256-z0oKYg6xiLq3yJGsp/LsY9XykbweQlHl42jHv2XTBz4=" crossorigin="anonymous"></script>
+
+
+
+
+    <script>
+      $(function () {
+        $("#datetimepicker1").datetimepicker();
+      });
+    </script>
+
   </head>
   <!-- ===================================================================== -->
   <body>
-    <a href="/trips">Home</a>
-    <!-- ------------------------------------------------------------------- -->
-    <form action='/trips/new/add' method='POST'>
-      {% csrf_token %}
-      <div class="form-group"> <!-- fill-in-blank for name -->
-        <label for="dest">Name: </label>
-        <input type="text" id="dest" name="dest" class="form-control">
-      </div>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Welcome {{request.session.user_logged_in.first_name}}! Create a trip!</a>
+          </li>
 
-      <!-- TODO: Other row fields -->
+          <li class="nav-item">
+              <a class="nav-link" href="/trips">Dashboard</a>
+          </li>
 
-      <input type="hidden" id="submit-button" name="submit-button" value="new">
-      <button class="btn btn-primary" id="refresh-page">Submit</button>
+          <li class="nav-item">
+              <a class="nav-link" href="/users/logout">Logout</a>
+          </li>
+        </ul>
+    </nav>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
 
-    </form>
-    <!-- ------------------------------------------------------------------- -->
+        <div id="left-col">
+
+            <form action='/trips/new/add' method='POST'>
+
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="dest"><b>Destination</b></label>
+                    <input type="text" class="form-control" id="dest" placeholder="" name="dest">
+                </div>
+
+                <!-- Below code snippet is modified from here: https://simpleisbetterthancomplex.com/tutorial/2019/01/03/how-to-use-date-picker-with-django.html-->
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                  <label for="datetimepicker1"><b>Start Date: </b></label>
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" name="start_date"/>
+                  <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+                </div>
+
+                <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                  <label for="dest"><b>End Date: </b></label>
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" name="end_date"/>
+                  <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+                </div>
+                <!-- End code snippet-->
+
+                <div class="form-group">
+                    <label for="plan"><b>Plan:</b></label>
+                    <textarea class="form-control" id="plan" name="plan"></textarea>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Add Book and Review</button>
+            </form>
+        </div> <!-- left-col -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
