@@ -88,27 +88,31 @@
                 <th>Start-Date</th>
                 <th>End-Date</th>
                 <th>Plan</th>
+                <th>User that added Trip</th>
+                <th>User Currently logged in</th>
                 <th>Action</th>
               </tr>
               </thead>
               <tbody>
-                {% for trip in trips %}
-                <tr>
-                    <td>
-                      <a href="/trips/{{trip.id}}">{{ trip.dest }}</a></td>
-                    <td>{{ trip.start_date }}</td>
-                    <td>{{ trip.end_date }}</td>
-                    <td>{{ trip.plan }}</td>
-                    <td>
-                      <p>
-                      <a href="/trips/{{trip.id}}/edit">Edit</a>
-                       |
-                      <a href="/trips/{{trip.id}}/delete">Delete</a>
-                      </p>
-                    </td>
-                  </tr>
-                  {% endfor %}
-                </tbody>
+                  <!--Only list trips added by the current user -->
+                    {% for trip in user.trips.all %}
+                    <tr>
+                        <td><a href="/trips/{{trip.id}}">{{ trip.dest }}</a></td>
+                        <td>{{ trip.start_date }}</td>
+                        <td>{{ trip.end_date }}</td>
+                        <td>{{ trip.plan }}</td>
+                        <td>{{trip.user.first_name}}</td>
+                        <td>{{request.session.user_logged_in.first_name}}</td>
+                        <td> <!--Actions-->
+                          <p>
+                          <a href="/trips/{{trip.id}}/edit">Edit</a>
+                           |
+                          <a href="/trips/{{trip.id}}/delete">Delete</a>
+                          </p>
+                        </td>
+                      </tr>
+                {% endfor %}
+              </tbody>
             </table>
         </div>
       </div>

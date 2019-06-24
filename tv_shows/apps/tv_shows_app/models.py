@@ -59,6 +59,7 @@ class Trips(models.Model):
   start_date = models.DateTimeField(auto_now=True)
   end_date   = models.DateTimeField(auto_now=True)
   plan = models.TextField()
+  user = models.ForeignKey(Users, related_name="trips")
   created_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)
 

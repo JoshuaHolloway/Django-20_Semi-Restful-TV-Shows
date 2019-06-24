@@ -15,8 +15,12 @@ def root(request):
   #return redirect("/trips")
 # ======================================================================================================================
 def trips(request):
+  # All Trips
   trips = Trips.objects.all()
-  context = {"trips": trips}
+
+  # Current User
+  user = Users.objects.get(id = request.session['user_logged_in']['id'])
+  context = {'trips': trips, 'user': user}
   return render(request, "tv_shows_app/index.html", context)
 # ======================================================================================================================
 def show_trip(request, trip_id):
@@ -35,16 +39,31 @@ def new(request):
   return render(request, "tv_shows_app/new.html")
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 def add(request):
+
+  # Step 0: Grab info from form
   dest = request.POST['dest']
 
-  # TODO
-  # network = request.POST["network"]
-  # release_date = request.POST["release_date"]
-  # description = request.POST["description"]
+  # TODO: Grab other fields
+  # start_date = request.POST["start_date"]
+  # end_date = request.POST["end_date"]
+  # plan = request.POST["plan"]
+  plan = "temp plan"
 
-  # TODO: Get {network, release_date, description} from form
-  trip = Trips.objects.create(dest=dest, start_date='2019-06-06', plan="temp")
-  return render(request, "tv_shows_app/show.html", get_trip_info(trip.id))
+  # TODO: Apply the one-to-many relationship
+  # Step 1: Grab user row from Users table
+  user_id = request.session['user_logged_in']['id'] # Grab user-id
+  user = Users.objects.get(id=user_id)
+
+  # Step 2: Create row in Trips table
+  #trip = Trips.objects.create(dest=dest, start_date='2019-06-06', plan="temp")
+  trip = Trips.objects.create(dest=dest, plan=plan, user=user)
+
+  # Step 3: Pass data into HTML
+  trips = Trips.objects.all()
+  users = Users.objects.all()
+  context = {'trips': trips, 'users': users}
+
+  return render(request, "tv_shows_app/index.html", context)
 # ======================================================================================================================
 def delete(request, trip_id):
   Trips.objects.get(id=trip_id).delete()
@@ -99,7 +118,6 @@ def validate(request):
     # No erros => Valid
     valid = True
     return valid
-
 # ======================================================================================================================
 def register(request):
 
