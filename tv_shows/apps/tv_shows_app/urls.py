@@ -2,7 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-  url(r'^$', views.index),
+  url(r'^$', views.root),
 
   # 1. Show table
   url(r'^trips$', views.trips),  # /shows
@@ -23,5 +23,11 @@ urlpatterns = [
   # 5. Delete
   # URL                  Request   Server-Method   return
   # /users/<id>/delete   GET       delete()        redirect to /trips
-  url(r'^trips/(?P<trip_id>\d+)/delete$', views.delete)  # /trips/<id>/delete
+  url(r'^trips/(?P<trip_id>\d+)/delete$', views.delete),  # /trips/<id>/delete
+
+  # 6. Register and Login
+  url(r'^users/reg_login', views.reg_login),
+  url(r'^users/reg', views.register),
+  url(r'^users/login', views.login),
+  url(r'^users/logout', views.logout),
 ]
